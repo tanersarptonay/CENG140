@@ -1,2 +1,2 @@
 # CENG140
-Course: C Programming
+Course: C Programming (in ANSI C)
