@@ -1,0 +1,38 @@
+graph1:
+
+uruk_hai -> saruman, ents
+saruman -> uruk_hai, gandalf
+gandalf -> saruman, eomer, king_theoden
+eomer -> gandalf
+king_theoden -> gandalf
+ents -> uruk_hai, pippin, merry
+pippin -> ents, merry, gandalf
+merry -> ents, pippin, gandalf
+
+graph2:
+
+king_theoden -> gamling, eomer, eowyn, aragorn
+gamling -> king_theoden
+eomer -> king_theoden, eowyn
+eowyn -> king_theoden, eomer
+aragorn -> king_theoden, legolas, gimli, haldir
+legolas -> king_theoden, aragorn, gimli
+gimli -> king_theoden, aragorn, legolas
+haldir -> aragorn, legolas
+
+merged:
+
+uruk_hai -> saruman, ents
+saruman -> uruk_hai, gandalf
+gandalf -> saruman, eomer, king_theoden
+eomer -> gandalf, king_theoden, eowyn
+king_theoden -> gandalf, gamling, eomer, eowyn, aragorn
+gamling -> king_theoden
+eowyn -> king_theoden, eomer
+aragorn -> king_theoden, legolas, gimli, haldir
+legolas -> king_theoden, aragorn, gimli
+gimli -> king_theoden, aragorn, legolas
+haldir -> aragorn, legolas
+ents -> uruk_hai, pippin, merry
+pippin -> ents, merry, gandalf
+merry -> ents, pippin, gandalf

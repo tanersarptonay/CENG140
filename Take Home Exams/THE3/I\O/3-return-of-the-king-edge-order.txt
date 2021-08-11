@@ -1,0 +1,40 @@
+graph1:
+
+king_theoden -> riders_of_rohan, eowyn, eomer, orcs, aragorn
+riders_of_rohan -> king_theoden, eomer
+eomer -> king_theoden
+eowyn -> king_theoden, merry, witch_king
+merry -> eowyn
+witch_king -> king_theoden, orcs
+orcs -> witch_king
+aragorn -> king_theoden, gimli, legolas
+gimli -> king_theoden, aragorn, legolas
+legolas -> king_theoden, aragorn, gimli
+
+graph2:
+
+knights_of_gondor -> gandalf
+gandalf -> knights_of_gondor, pippin, orcs
+pippin -> gandalf, faramir
+faramir -> denethor
+denethor -> faramir
+orcs -> witch_king
+witch_king -> orcs, gandalf, knights_of_gondor
+
+merged:
+
+king_theoden -> riders_of_rohan, eowyn, eomer, orcs, aragorn
+riders_of_rohan -> king_theoden, eomer
+eomer -> king_theoden
+eowyn -> king_theoden, merry, witch_king
+merry -> eowyn
+witch_king -> king_theoden, orcs, gandalf, knights_of_gondor
+orcs -> witch_king
+gandalf -> knights_of_gondor, pippin, orcs
+knights_of_gondor -> gandalf
+pippin -> gandalf, faramir
+faramir -> denethor
+denethor -> faramir
+aragorn -> king_theoden, gimli, legolas
+gimli -> king_theoden, aragorn, legolas
+legolas -> king_theoden, aragorn, gimli
