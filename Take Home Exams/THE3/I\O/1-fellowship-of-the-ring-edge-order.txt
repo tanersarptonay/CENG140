@@ -1,1 +1,33 @@
+graph1:
 
+frodo -> gandalf, bilbo, sam, merry, THE_RING
+gandalf -> frodo, bilbo, THE_RING
+bilbo -> frodo, gandalf, smeagol, THE_RING
+smeagol -> THE_RING
+sam -> frodo, merry
+merry -> sam, frodo
+
+
+graph2:
+
+elrond -> gandalf, legolas, boromir, gimli
+gandalf -> elrond
+legolas -> elrond, gandalf, aragorn
+aragorn -> elrond, frodo
+frodo -> aragorn
+boromir -> aragorn
+gimli -> aragorn
+
+merged
+
+frodo -> gandalf, bilbo, sam, merry, THE_RING, aragorn
+gandalf -> frodo, bilbo, THE_RING, elrond
+bilbo -> frodo, gandalf, smeagol, THE_RING
+smeagol -> THE_RING
+elrond -> gandalf, legolas, boromir, gimli
+legolas -> elrond, gandalf, aragorn
+aragorn -> elrond, frodo
+boromir -> aragorn
+gimli -> aragorn
+sam -> frodo, merry
+merry -> sam, frodo
